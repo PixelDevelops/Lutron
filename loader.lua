@@ -76,7 +76,7 @@ local SupportedGames = ({
 })[game.PlaceId]
 
 if SupportedGames then
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PixelDevelops/Lutron/" .. SupportedGames))()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PixelDevelops/Lutron/main/" .. SupportedGames))()
 else
 	StarterGui:SetCore("SendNotification", {
 		Title = "Game not supported",
